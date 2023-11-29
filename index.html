@@ -82,6 +82,9 @@
         vertical-align: middle;
         border-bottom: 1px solid rgb(233, 233, 233);
     }
+    .table-categories .price-text{
+        text-align: end;
+    }
     @media only screen and (min-width: 620px) {
       .u-row {
         width: 600px !important;
@@ -124,6 +127,9 @@
     }
 
     @media (max-width: 480px) {
+        .table-categories{
+            width: 95% !important;
+        }
       .v-container-padding-padding {
         padding: 10px 10px 10px !important;
       }
@@ -213,7 +219,7 @@
     <tbody>
       <tr style="vertical-align: top">
         <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
-          <div class="u-row-container" style="padding: 0px;background-color: transparent">
+          <div class="u-row-container" style="padding: 0px;background-color: transparent; margin-top: 30px;">
             <div class="u-row"
               style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
               <div
@@ -277,12 +283,12 @@
 
                                   <div class="v-line-height v-font-size text-td-box"
                                   style="font-size: 14px; line-height: 140%;word-wrap: break-word;">
-                                  <p style="line-height: 130%;">Hello {{$name}},</p>
+                                  <p style="line-height: 130%;">Hello Shivam Pawar,</p>
                                 </div>
                                 <div class="v-line-height v-font-size text-td-box"
                                 style="font-size: 14px; line-height: 140%;word-wrap: break-word;">
                                 <p style="line-height: 130%;">Oder Id:121212</p>
-                                <p style="line-height: 130%;">Ex.Date:29Aug2022</p>
+                                <p style="line-height: 130%;">Ex.Date:27 Nov,2023</p>
                             </div>
                             </div>
                             </td>
@@ -330,31 +336,31 @@
                                 <th></th>
                                 <th>Name</th>
                                 <th>Qty</th>
-                                <th>price</th>
+                                <th class="price-text">price</th>
                             </tr>
                             <tr>
-                                <td class="item-td"><img src="images/cat-1.jpg" alt=""  width="60px"></td>
-                                <td class="item-td">cooker Kitchen set</td>
-                                <td class="item-td">1</td>
-                                <td class="item-td">1200 $</td>
+                                <td class="item-td" style="width: 15%;"><img src="images/cat-1.jpg" alt=""  width="60px"></td>
+                                <td class="item-td" style="width: 45%;">cooker Kitchen set</td>
+                                <td class="item-td" style="width: 15%;">1</td>
+                                <td class="item-td price-text" style="width: 35%;">$ 1200</td>
                               </tr>
                               <tr>
                                 <td class="item-td"><img src="images/cat-1.jpg" alt=""  width="60px"></td>
                                 <td class="item-td">cooker Kitchen set</td>
                                 <td class="item-td">1</td>
-                                <td class="item-td">1200 $</td>
+                                <td class="item-td price-text">$ 1200</td>
                               </tr>
                               <tr>
                                 <td class="item-td"><img src="images/cat-1.jpg" alt=""  width="60px"></td>
                                 <td class="item-td">cooker Kitchen set</td>
                                 <td class="item-td">1</td>
-                                <td class="item-td">1200 $</td>
+                                <td class="item-td price-text">$ 1200</td>
                               </tr>
                               
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th colspan="4" style="text-align: end;">Total: 3600 $</th>
+                                <th colspan="4" style="text-align: end;">Total: $ 3600 </th>
                             </tr>
                         </tfoot>
                       </table>
@@ -380,7 +386,7 @@
                         <tbody>
                           <tr>
                             <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px 60px 10px;font-family:arial,helvetica,sans-serif;"
+                              style="overflow-wrap:break-word;word-break:break-word;padding:10px 60px 20px;font-family:arial,helvetica,sans-serif;"
                               align="left">
                               <div class="v-line-height v-font-size"
                                 style="font-size: 14px; line-height: 140%;word-wrap: break-word;">
